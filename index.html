@@ -290,7 +290,7 @@
                 <button class="tab-button" onclick="showTab('vitals')">Vital Signs</button>
                 <button class="tab-button" onclick="showTab('labs')">Laboratory</button>
                 <button class="tab-button" onclick="showTab('medications')">Medications</button>
-		<button class="tab-button" onclick="showTab('codes')">Codes</button>
+		<button class="tab-button" onclick="showTab('codes')">Summary</button>
             </nav>
         </header>
 
@@ -1053,9 +1053,9 @@
                     <th style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: left;">Canonical Name</th>
                     <th style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: left;">DB Basic Name &amp; # Patients</th>
                     <th style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: left;">DB Generic Name</th>
-                    <th style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: left;">Actual Codes in DB</th>
-                    <th style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">Total Patients for Code</th>
                     <th style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">Code in DB?</th>
+                    <th style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: left;">Actual Codes in DB</th>
+                    <th style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">Total Patients</th>
                     <th style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: left;">Ontology</th>
                     <th style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: left;">Ontology Code</th>
                     <th style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: left;">Ontology Name</th>
@@ -1072,9 +1072,9 @@
                         </ul>
                     </td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">BISOPROLOL FUMARATE</td>
+                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">5674 / 5663 / 6813 / 5676</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">779</td>
-                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">🔍</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
@@ -1089,9 +1089,9 @@
                         </ul>
                     </td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">Apixaban</td>
+                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">7092 / 7094</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">594</td>
-                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">🔍</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
@@ -1109,9 +1109,9 @@
                         </ul>
                     </td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">AMIODARONE HYDROCHLORIDE</td>
+                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">10883 / 6503 / 10689 / 13867</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">306</td>
-                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">🔍</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
@@ -1131,9 +1131,9 @@
                         </ul>
                     </td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">METOPROLOL TARTRATE</td>
+                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">6694 / 9064 / 14398 / 16514 / 14319 / 10791 / 10813 / 14761</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">251</td>
-                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">🔍</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
@@ -1151,9 +1151,9 @@
                         </ul>
                     </td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">DIGOXIN</td>
+                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">14895 / 10022 / 14118 / 13037 / 16595</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">225</td>
-                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">🔍</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
@@ -1168,9 +1168,9 @@
                         </ul>
                     </td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">DABIGATRAN ETEXILATE</td>
+                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">6133 / 6135 / 6424</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">38</td>
-                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">🔍</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
@@ -1191,9 +1191,9 @@
                         </ul>
                     </td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">VERAPAMIL HYDROCHLORIDE</td>
+                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">14513 / 9705 / 14514 / 5363 / 10763 / 10764 / 7843 / 12837 / 14097 / 14098 / 12838 / 10951 / 12090 / 11968 / 11969</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">35</td>
-                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">🔍</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
@@ -1209,9 +1209,9 @@
                         </ul>
                     </td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">FLECAINIDE ACETATE</td>
+                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">8439 / 10747 / 15359</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">11</td>
-                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">🔍</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
@@ -1222,9 +1222,9 @@
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">diltiazem</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">NULL</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">NULL</td>
+                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">N/A</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">0</td>
-                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
@@ -1235,9 +1235,9 @@
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">rivaroxaban</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">NULL</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">NULL</td>
+                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem; text-align: center;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">N/A</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">0</td>
-                    <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;">❌</td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
                     <td style="border: 1px solid #e5e7eb; padding: 0.75rem;"></td>
@@ -1245,7 +1245,7 @@
             </tbody>
         </table>
         <p style="font-size: 0.875rem; color: #6b7280; margin-top: -1rem;">
-            <strong>Legend:</strong> ✔ = Found by code in DB; ❌ = Not found; 🔍 = Found only by name lookup (protocol code not present).
+            <strong>Legend:</strong> ✔ = Found by code in DB; ❌ = Code not found in DB;
         </p>
     </div>
 </div>
